@@ -7,7 +7,7 @@
     "example": "example"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava --verbose"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,8 @@
     "xo": "^0.18.1"
   },
   "xo": {
-    "esnext": true
+    "esnext": true,
+    "space": true,
+    "semicolon": false
   }
 }
