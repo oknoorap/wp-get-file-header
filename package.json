@@ -1,0 +1,37 @@
+{
+  "name": "wp-get-file-header",
+  "version": "0.1.0",
+  "description": "Get WordPress file header information in nodejs",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "xo && ava --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oknoorap/wp-get-file-header.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "oknoorap",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oknoorap/wp-get-file-header/issues"
+  },
+  "homepage": "https://github.com/oknoorap/wp-get-file-header#readme",
+  "dependencies": {
+    "string": "^3.3.3"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "xo": "^0.18.1"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "semicolon": false
+  }
+}
