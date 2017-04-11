@@ -1,11 +1,11 @@
 # WordPress Get File Header
-Get WordPress file header information, see https://codex.wordpress.org/File_Header.
+Get WordPress file header information, more details see https://codex.wordpress.org/File_Header.
 
 # Installation
 `npm install wp-get-file-header`
 
 # Usage
-This example codes run in nodejs at least version 6.x.x
+Example codes below is run under nodejs at least with version 6.x.x installed
 
 ```javascript
 const wpFileHeader = require('wp-get-file-header')
@@ -23,3 +23,10 @@ wpFileHeader('/example/wordpress/wp-content/themes/mytheme/page-templates/full-w
     console.log(page.templateName)
   })
 ```
+
+# Related
+
+* https://github.com/Ribhnux/deux
+
+# License
+MIT (c) [oknoorap](https://github.com/oknoorap)
