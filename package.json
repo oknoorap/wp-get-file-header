@@ -21,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/oknoorap/wp-get-file-header/issues"
   },
-  "homepage": "https://github.com/oknoorap/wp-get-file-header#readme"
+  "homepage": "https://github.com/oknoorap/wp-get-file-header#readme",
+  "dependencies": {
+    "string": "^3.3.3"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "xo": "^0.18.1"
+  }
 }
