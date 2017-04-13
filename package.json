@@ -1,6 +1,6 @@
 {
   "name": "wp-get-file-header",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Get WordPress file header information in nodejs",
   "main": "index.js",
   "directories": {
@@ -30,7 +30,9 @@
     "xo": "^0.18.1"
   },
   "ava": {
-    "files": ["test/test.js"]
+    "files": [
+      "test/test.js"
+    ]
   },
   "xo": {
     "esnext": true,
