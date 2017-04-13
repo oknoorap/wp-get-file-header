@@ -29,6 +29,9 @@
     "ava": "^0.19.1",
     "xo": "^0.18.1"
   },
+  "ava": {
+    "files": ["test/test.js"]
+  },
   "xo": {
     "esnext": true,
     "space": true,
