@@ -2,7 +2,11 @@
 Get WordPress file header information, more details see https://codex.wordpress.org/File_Header.
 
 # Installation
+Using npm:  
 `npm install wp-get-file-header`
+
+Using Yarn:  
+`yarn add wp-get-file-header`
 
 # Usage
 Example codes below is run under nodejs at least with version 6.x.x installed
