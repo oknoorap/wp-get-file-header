@@ -16,9 +16,12 @@ const wpFileHeader = require('wp-get-file-header')
 
 // 1st example
 wpFileHeader('/example/wordpress/wp-content/themes/mytheme/style.css')
-  .then(info => {
+  .then((info, arr) => {
     console.log(info.themeName)
     console.log(info.description)
+
+    // Get origin info in Array
+    console.log(arr)
   })
 
 // 2nd Example
