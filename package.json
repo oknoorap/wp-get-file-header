@@ -1,6 +1,6 @@
 {
   "name": "wp-get-file-header",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Get WordPress file header information in nodejs",
   "main": "index.js",
   "directories": {
