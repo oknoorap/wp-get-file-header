@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/oknoorap/wp-get-file-header#readme",
   "dependencies": {
-    "string": "^3.3.3"
+    "slugify": "^1.1.0",
+    "trim": "^0.0.1"
   },
   "devDependencies": {
     "ava": "^0.19.1",
