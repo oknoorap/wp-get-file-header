@@ -1,8 +1,14 @@
+const fs = require('fs')
+const trim = require('trim')
+const slugify = require('slugify')
+
 // Max read size 8kb
 const MAX_READ_SIZE = 8192
 const headerRegx = /(.[^:]*):(.*)/
-const fs = require('fs')
-const _s = require('string')
+
+const camelize = str => {
+  return trim(str).replace(/(-|_|\s)+(.)?/g, (mathc, sep, c) => c ? c.toUpperCase() : '')
+}
 
 module.exports = filename => {
   return new Promise(resolve => {
@@ -28,8 +34,8 @@ module.exports = filename => {
         const match = item.match(headerRegx)
         if (match && match[1] && match[2]) {
           return {
-            key: _s(match[1]).trim().s,
-            value: _s(match[2]).trim().s
+            key: trim(match[1]),
+            value: trim(match[2])
           }
         }
         return undefined
@@ -37,7 +43,8 @@ module.exports = filename => {
 
       const finalHeaders = {}
       headers.forEach(item => {
-        finalHeaders[_s(item.key).slugify().camelize().s] = item.value
+        const headerKey = camelize(slugify(item.key.toLowerCase()))
+        finalHeaders[headerKey] = item.value
       })
       Object.defineProperty(finalHeaders, '$origins', {
         value: () => headers
