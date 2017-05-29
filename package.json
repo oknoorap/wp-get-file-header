@@ -39,5 +39,8 @@
     "esnext": true,
     "space": true,
     "semicolon": false
-  }
+  },
+  "files": [
+    "index.js"
+  ]
 }
