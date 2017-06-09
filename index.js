@@ -26,8 +26,10 @@ module.exports = filename => {
       const lines = buffer.toString()
         .replace(/\r/g, `\n`)
         .replace(/\u0000/g, '')
+        .replace(/\*/g, '')
         .split(`\n`)
         .filter(item => item)
+        .map(item => item.trim())
       fs.closeSync(openfile)
 
       const headers = lines.map(item => {
